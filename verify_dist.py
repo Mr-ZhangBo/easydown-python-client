@@ -29,5 +29,5 @@ with zipfile.ZipFile(wheels[0]) as wheel:
 with tarfile.open(sdists[0]) as source:
     paths = [p.name.split("/", 1)[-1] for p in source.getmembers() if p.isfile()]
     assert set(paths) == {"easydown_api_client.py", "test_client.py", "pyproject.toml",
-                          "README.md", "LICENSE", "PKG-INFO"}, paths
+                          ".gitignore", "README.md", "LICENSE", "PKG-INFO"}, paths
 print("Wheel and sdist metadata, source equality and file boundaries verified.")
