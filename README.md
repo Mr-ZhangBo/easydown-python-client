@@ -18,6 +18,7 @@ platforms, authentication, current billing rules, and response fields.
 ## Install and make one request
 
 Requires Python 3.10 or newer, with no third-party runtime dependencies.
+After the initial version is published to PyPI, install it with:
 
 ```sh
 python -m pip install easydown-api-client
